@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+/* CSS Document */
+/*全局样式*/
+body {
+  font-family: "微软雅黑", Arial, Verdana, Helvetica, sans-serif, "宋体";
+  font-size: 12px;
+  color: #333;
+  background: #fff;
+}
+
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+td,
+th,
+img,
+div,
+tr,
+p,
+select,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  outline: none;
+  cursor: pointer;
+}
+
+a:focus {
+  outline: none;
+}
+
+.clear {
+  clear: both;
+  height: 0px;
+  display: block;
+  line-height: 0px;
+  visibility: hidden;
+  overflow: hidden;
+  zoom: 1;
+}
+
+input {
+  vertical-align: middle;
+  border: none;
+  background: none;
+}
+
+select {
+  vertical-align: middle;
+  border: none;
+  background: none;
+}
+
+button {
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+}
+
+
+
+textarea,
+input {
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 0px;
+  background: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+input[type=button]::-moz-focus-inner,
+input[type=submit]::-moz-focus-inner {
+  border: none;
+}
+
+input[type=button],
+input[type=submit] {
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* 鼠标变小手*/
+.cs {
+  cursor: pointer;
+}
+
+
+.flex_x{
+    display: flex;
+}
+
+.flex_y{
+    display: flex;
+    flex-direction: column;
+}
+/* 头部样式 */
+.head{
+    height: 80px;
+    line-height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    background: #9ca892;
+    padding: 0 40px;
+}
+.head img{
+    width: 40px;
+    height: 40px;
+}
+.head ul{
+    flex: 1;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 24px;
+}
+.search{
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    background: #fef8e0;
+    position: relative;
+}
+.search::after{
+    content: "";
+        display: inline-block;
+        position: absolute;
+top: 10px;
+right: 12px;
+    background: url("./image/magnifying-glass.png");
+    background-size: cover;
+    width: 20px;
+        height: 20px;
+}
+
+
+.footer{
+  width: 100%;
+  height: 200px;
+  background-color: #808b7a;
+  padding: 30px 0 30px 50px;
+  box-sizing: border-box;
+}
+.f_title{
+  color: #c1c5b2;
+  font-size: 21px;
+  font-weight: bold;
+}
+.others{
+  color: #c1c5b2;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+.others ul{
+width: 400px;
+}
+.others ul li{
+  margin-top: 10px;
+}
+.active{
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  border-radius: 20px;
+}
